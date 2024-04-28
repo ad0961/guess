@@ -1,0 +1,158 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+body {
+  width:calc(100vw - 1rem);
+  height:100vh;
+  font-family: "Saira Condensed", sans-serif;
+  font-style: normal;
+  position: relative;
+  overflow: auto;
+}
+
+.game-container{
+  flex-direction: column;
+  overflow: auto;
+  height:max-content
+}
+
+.header {
+height:4rem;
+width:100%;
+padding: 1rem;
+display: flex;
+align-items: center;
+justify-content: space-between;
+background: rgb(34,193,195);
+background: linear-gradient(87deg, rgba(34,193,195,1) 0%, rgba(255,243,0,1) 100%);
+color:black;
+font-weight: 600;
+}
+
+.hint{
+  font-style: italic;
+}
+
+.visual-container h1{
+text-align: center;
+padding:1rem;
+}
+
+.logo, .logo img{
+  height:2.5rem;
+  font-size: 1.4rem;
+  vertical-align: middle;
+}
+
+.main{
+  position: relative;
+}
+
+.divider{
+  height: 0.25rem;
+  width: 100%;
+  margin: 2rem 0;
+  background-color: black;
+}
+
+.secret_number{
+  height: 4rem;
+  width:4rem;
+  border-radius: 50%;
+  position: absolute;
+  left: calc(50% - 2rem);
+  font-size: 3rem;
+  z-index: 1;
+  background-color: white;
+  text-align: center;
+  border:1px solid red;
+  line-height: 1.3;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  text-align: center;
+  padding:0.5rem 0;
+  background-color: black;
+  width:calc(100% - 1rem);
+  z-index: 2;
+  color: white;
+}
+
+button {
+  height:2rem;
+  padding:0.5rem 1rem;
+  cursor: pointer;
+  background-color: black;
+  color:white;
+  transition: all ease-in-out 0.3s;
+}
+
+button:active{
+  scale: 0.9;
+}
+
+.reset {
+  border: 1px solid white;
+}
+
+.reset :hover{
+  box-shadow: 10px 10px 10px 10px white;
+  background-color: white;
+}
+
+.secret_number{
+  border:1px solid black;
+  background: rgb(34,193,195);
+  background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(255,243,0,1) 100%);
+}
+
+.action-container{
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  flex-wrap: wrap;
+}
+
+.guess-container{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap:1rem;
+  flex:1 0 400px;
+  margin: 1rem 0;
+}
+
+.score-container{
+  flex:1 0 400px;
+  margin: 1rem 0;
+}
+
+.score-container div{
+  margin-bottom: 1rem;
+}
+
+#guess {
+  width:60%;
+  height:2rem;
+  border: none;
+  border-bottom: 0.002rem solid black;
+  padding: 0 0.5rem;
+}
+
+#guess:focus {
+  outline: none;
+  border-bottom: 2px solid rgb(4, 212, 212)
+}
+
