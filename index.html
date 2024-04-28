@@ -4,22 +4,26 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/png"  href="/favicon.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital,wght@0,400;1,400;1,600&family=Barriecito&family=Saira+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <title>Guess the number</title>
   </head>
   <body>
     <div class="game-container">
-      <header>
-        <span><img src="/assets/logo.png" alt="Logo" class="logo"> Guess !</span>
-        <span>&lt; Between 1 and 20 &gt;</Between></span>
-        <button type="reset">Start Over</button>
+      <header class="header">
+        <span class="logo"><img src="/assets/logo.png" alt="Logo" > Guess !</span>
+        <span class="hint">&lt; Between 1 and 20 &gt;</span>
+        <button type="reset" class="reset">Start Over</button>
       </header>
-      <main>
+      <main class="main">
         <div class="visual-container">
         <h1>Guess my number !</h1>
         <div class="secret_number">
           ?
         </div>
-        <div class="divider">ffff</div>
+        <div class="divider"></div>
       </div>
       <div class="action-container">
         <form class="guess-container">
@@ -29,26 +33,28 @@
         </form>
         <div class="score-container">
           <div class="status">
-            <span></span>
+            <span>😎</span>
           <span class="status-container">Start guessing...
           </span>
           </div>
           <div class="score">
-            <span></span>
-          <span class="status-container">Score
+            <span>💯</span>
+          <span class="status-container">Score : 
           </span>
           <span class="score-value">20</span>
           </div>
           <div class="highscore">
-            <span></span>
-          <span class="high-container">Highscore
+            <span>🎊</span>
+          <span class="high-container">Highscore : 
           </span>
           <span class="highscore-value">0</span>
           </div>
         </div>
       </div>
       </main>
-      <footer>copyright &copy; @Aditya_Dwivedi <span class="current_year"></span></footer>  
+      <footer class="footer">copyright &copy; @Aditya_Dwivedi <span class="current_year"></span></footer>  
     </div>
+    <script src="/confetti.js"></script>
+    <script src="/index.js"></script>
   </body>
 </html>
