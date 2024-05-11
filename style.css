@@ -156,3 +156,13 @@ button:active{
   border-bottom: 2px solid rgb(4, 212, 212)
 }
 
+.validator {
+  color:red;
+  font-size: 0.8rem;
+  font-style: italic;
+}
+
+.hidden {
+  display: none;
+}
+
