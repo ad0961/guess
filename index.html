@@ -28,12 +28,13 @@
       <div class="action-container">
         <form class="guess-container">
           <label for="guess">Enter the number here.</label>
-          <input type="number" inputmode="numeric" placeholder="0" id="guess" min="0" max="20">
+          <input placeholder="0" id="guess" type="number" min="1" max="20">
+          <span class="hidden validator">*Enter number less than 20</span>
           <button class="check">Check !</button>
         </form>
         <div class="score-container">
           <div class="status">
-            <span>😎</span>
+            <span class="emoji">😎</span>
           <span class="status-container">Start guessing...
           </span>
           </div>
